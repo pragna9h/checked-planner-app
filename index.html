@@ -12,13 +12,18 @@
                 <h1><img width="70" height="70" src="https://img.icons8.com/bubbles/100/checkmark.png" alt="checkmark"/>Checked</h1>
             </div>
             <div class="heading-actions">
-                <button class="addBtn" title="Press Shift + P for new page"><img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/28/external-add-a-new-note-with-plus-symbol-isolated-on-white-background-work-fresh-tal-revivo.png" alt="Add new note symbol"/></button>
-                <button class="downloadBtn" title="Download pages in txt"><img width="45" height="45" src="https://img.icons8.com/dusk/64/download--v1.png" alt="Download notes icon"/></button>
+                <div class="tooltip-wrapper">
+                    <button class="addBtn"><img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/28/external-add-a-new-note-with-plus-symbol-isolated-on-white-background-work-fresh-tal-revivo.png" alt="Add new note symbol"/></button>
+                    <span class="tooltip-text">or use Shift + P to add new page</span>
+                </div>
+                <div class="tooltip-wrapper">
+                    <button class="downloadBtn"><img width="45" height="45" src="https://img.icons8.com/dusk/64/download--v1.png" alt="Download notes icon"/></button>
+                    <span class="tooltip-text">Download pages</span>
+                </div>
             </div>
         </div>
         <div class="pages-container">
         </div>
     </body>
     <script src="./app.js"></script>
-
 </html>

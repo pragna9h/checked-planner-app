@@ -47,6 +47,36 @@ html,body {
     padding: 0.5rem;
 }
 
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+
+  top: 120%; /* slightly below the element */
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .heading-container button:hover {
     background-color: #FAFAFA;
     border-radius: 20%;
